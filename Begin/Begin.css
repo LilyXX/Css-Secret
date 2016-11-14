@@ -1,0 +1,6 @@
+div{
+	/*background: rgb(255,128,0);*/
+	background: linear-gradient(90deg,#ff0,#f06);
+	height: 50px;
+	width: 100px;
+}

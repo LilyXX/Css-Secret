@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>尽量减少代码重复</title>
+<style type="text/css">
+button{
+	padding: .3em .8em;	
+	border: 1px solid rgba(0,0,0,.1);
+	background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+	border-radius: .2em;
+	box-shadow: 0 .05em .25em gray;
+	color: #fff;
+	text-shadow: 0 -.05em .05em #335166;
+	font-size: 125%;	/*用百分号表示*/
+	line-height: 1.5;  /*1.5倍*/
+}
+button.cancel{
+	background: #6b0;
+}
+button.ok{
+	background: #c00;
+/*	border-width: 10px;
+	border-left: 0;*/
+}
+hr{
+	height: .5em;
+	background: currentColor;
+}
+/*ul{
+	--accent-color: purple;
+}
+li{
+	background: var(--accent-color);
+}*/
+</style>
+</head>
+
+<body>
+<ul>
+	<li><button class="yes">Yes!</button></li>
+	<hr>
+	<li><button class="cancel">Cancel</button></li>
+	<hr>
+	<li><button class="ok">Ok</button></li>
+</ul>
+</body>
+</html>
