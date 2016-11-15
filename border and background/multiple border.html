@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>multiple border</title>
+<style type="text/css">
+/*方法一：box-shadow*/
+.div01{
+	height: 100px;
+	width: 150px;
+	margin: 50%;
+	background: yellowgreen;
+	box-shadow: 0 0 0 10px #655,
+				0 0 0 15px deeppink,
+				0 2px 5px 15px rgba(0,0,0,.6) inset;
+}
+/*方法二：outline*/
+.div02{
+	height: 100px;
+	width: 150px;
+	margin: 40%;
+	background: greenyellow;
+	border: 10px solid #655;
+	outline: 5px solid deeppink;
+	outline-offset: 2px; /*间距*/
+}
+</style>
+</head>
+
+<body>
+<div class="div01"></div>
+<div class="div02"></div>
+</body>
+</html>

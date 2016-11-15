@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>stripes</title>
+<style type="text/css">
+div{
+	height: 100px;
+	width: 200px;
+	margin-top: 20px;
+	border: 1px solid #ccc; 
+	display: inline-block;
+}
+/*horizontal stripes*/
+.div_01{
+	background: linear-gradient(#fb3,#58a);
+}
+.div_02{
+	background: linear-gradient(#fb3 20%,#58a 80%);
+	background-size: 100% 30px;
+}
+.div_03{
+	background: linear-gradient(#fb3 33.3%,#58a 66.6%,yellowgreen 0%);
+	background-size: 100% 45px;
+}
+/*vertical-stripes*/
+.div_04{
+	background: linear-gradient(to right,#58a,#fb3)
+}
+.div_05{
+	background: linear-gradient(to right,#58a 50%,#fb3 0);
+	background-size: 30px 100%;
+}
+/*diagonal-stripes*/
+.div_06{
+	background: linear-gradient(45deg,#fb3,#58a);
+}
+.div_07{
+	background: linear-gradient(45deg,#58a 50%,#fb3 0);
+	background-size: 30px 30px;
+}
+.div_08{
+	background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%, #fb3 0,#fb3 75%,#58a 0);
+	background-size: 42px 42px;
+}
+/*diagonal-stripes-60deg*/
+.div_09{
+	background: repeating-linear-gradient(45deg,#fb3,#58a 30px);
+}
+.div_10{
+	background: repeating-linear-gradient(45deg,#fb3,#fb3 15px,#58a 0,#58a 30px);
+}
+.div_11{
+	background: repeating-linear-gradient(60deg,#fb3,#fb3 15px,#58a 30px);
+}
+.div_12{
+	background: repeating-linear-gradient(45deg,#fb3 0, #fb3 25%,#58a 0,#58a 50%);
+}
+/*subtle-stripes*/
+.div_13{
+	background: repeating-linear-gradient(30deg,#79b,#79b 15px,#58a 0, #58a 30px);
+}
+.div_14{
+	background: #58a;
+	background-image: repeating-linear-gradient(30deg,hsla(0,0%,100%,.1),
+		hsla(0,0%,100%,.1) 15px,
+		transparent 0,transparent 30px);
+}
+</style>
+</head>
+
+<body>
+<!-- horizontal-stripes -->
+<div class="div_01"></div>
+<div class="div_02"></div>
+<div class="div_03"></div>
+<br>
+<!-- vertical-stripes -->
+<div class="div_04"></div>
+<div class="div_05"></div>
+<br>
+<!-- diagonal-stripes -->
+<div class="div_06"></div>
+<div class="div_07"></div>
+<div class="div_08"></div>
+<br>
+<!-- diagonal-stripes-60deg -->
+<div class="div_09"></div>
+<div class="div_10"></div>
+<div class="div_11"></div>
+<div class="div_12"></div>
+<br>
+<!-- subtle-stripes -->
+<div class="div_13"></div>
+<div class="div_14"></div>
+</body>
+</html>
